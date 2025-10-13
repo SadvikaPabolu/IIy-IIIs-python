@@ -1,0 +1,164 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f8758345-3de7-43f8-bdd4-457e9fde32bf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter weight in kilograms:  56\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "56.0 kilograms is equal to 179.20 pounds.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Conversion factor\n",
+    "KG_TO_POUNDS = 3.2\n",
+    "# Ask the user for weight in kilograms\n",
+    "kg = float(input(\"Enter weight in kilograms: \"))\n",
+    "# Convert to pounds\n",
+    "pounds = kg * KG_TO_POUNDS\n",
+    "print(f\"{kg} kilograms is equal to {pounds:.2f} pounds.\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "bd165cfe-b30d-4306-8b84-68c3e72e15de",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8,11,14,17,20,23,26,29,32,35,38,41,44,47,50,53,56,59,62,65,68,71,74,77,80,83,86,89,"
+     ]
+    }
+   ],
+   "source": [
+    "for n in range(8,90,3):\n",
+    "    print(n,end=\",\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c2dedc84-7e22-483a-9615-089f2ce234b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['z', 'a', 'r', 'i']\n"
+     ]
+    }
+   ],
+   "source": [
+    "text=\"zari\"\n",
+    "char_list=list(text)\n",
+    "print(char_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "ca8dd257-a889-4016-b84f-93f5bdb5f1a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The largest number is: 89\n"
+     ]
+    }
+   ],
+   "source": [
+    "numbers = [12, 45, 67, 23, 89, 34]\n",
+    "largest = max(numbers)\n",
+    "print(\"The largest number is:\", largest)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "297903fa-b334-4f40-baac-cd4a2eaa6ab9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the position (n) of the Fibonacci number:  54\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The 54th Fibonacci number is: 53316291173\n"
+     ]
+    }
+   ],
+   "source": [
+    "def fibonacci(n):\n",
+    "    if n <= 0:\n",
+    "        return \"Invalid input. n must be a positive integer.\"\n",
+    "    elif n == 1:\n",
+    "        return 0\n",
+    "    elif n == 2:\n",
+    "        return 1\n",
+    "    else:\n",
+    "        a, b = 0, 1\n",
+    "        for _ in range(2, n):\n",
+    "            a, b = b, a + b\n",
+    "        return b\n",
+    "n = int(input(\"Enter the position (n) of the Fibonacci number: \"))\n",
+    "result = fibonacci(n)\n",
+    "print(f\"The {n}th Fibonacci number is:\", result)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "24c5979d-2afc-4ec9-a76b-1b26662d8149",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
